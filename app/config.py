@@ -7,7 +7,7 @@ class Settings(BaseSettings):
     APP_VERSION: str = "1.0.0"
     DEBUG: bool = False
     
-    DATABASE_URL: str = "mysql+aiomysql://root:password@localhost:3306/glucoease"
+    DATABASE_URL: str = "postgresql+asyncpg://postgres:password@localhost:5432/glucoease"
     REDIS_URL: str = "redis://localhost:6379/0"
     
     SECRET_KEY: str = "your-super-secret-key-change-in-production"
